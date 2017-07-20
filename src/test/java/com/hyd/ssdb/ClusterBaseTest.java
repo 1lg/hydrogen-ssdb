@@ -20,8 +20,8 @@ public class ClusterBaseTest {
     @Before
     public void init() {
         this.ssdbClient = new SsdbClient(new ConsistentHashSharding(Arrays.asList(
-                Cluster.fromSingleServer("127.0.0.1", 8881),
-                Cluster.fromSingleServer("127.0.0.1", 8882)
+                Cluster.fromSingleServer("172.30.160.67", 8888),
+                Cluster.fromSingleServer("172.30.160.67", 8889)
         )));
     }
 

@@ -1,0 +1,16 @@
+---
+#type:Sharding
+##分片部署
+#Sharding
+type: Cluster
+- Cluster:
+    - Server:
+        host: 10.90.13.100
+        port: 8888
+        master: 1
+        timeout: 2
+    - Server:
+        host: 10.90.13.100
+        port: 8888
+        master: 0
+        timeout: 2
